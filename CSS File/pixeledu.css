@@ -1,0 +1,1154 @@
+/*This page is representing the 'Computer Sceince' releted eudcation option styling code*/ 
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+
+body
+{
+	font: 14px/1.5 Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+}
+
+/*Global Alignment*/
+.Container
+{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/*Header_Section_Start*/
+/*Header ul*/
+ul
+{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 3px;
+}
+
+/*Header*/
+header
+{
+	background: #465a65;
+	color: #ffffff;
+	padding-top: 15px;
+	min-height: 60px;
+	min-width: 100%;
+	border-bottom: 3px solid #e74c3c;
+	position: fixed;
+	z-index: 1;
+}
+
+/*Header a*/
+header a
+{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+/*Header li*/
+header nav
+{
+	float: left;
+}
+header li
+{
+	display: inline-block;
+	padding: 0 8px 0 8px;
+}
+
+/*Header Logo_Branding*/
+header #Logo_Branding
+{
+	float: left;
+}
+header #Logo_Branding img
+{
+	margin: 0px;
+}
+header nav
+{
+	float: right;
+	margin-top: 9px;
+}
+header #Logo_Branding img
+{
+	width: 130px;
+	height: 40px;
+	margin-left: 6px;
+	margin-top: 3px;
+}
+/*Logo_Branding hover*/
+header #Logo_Branding:hover img
+{
+	transform: scale(1.1);
+	transition: .4s;
+}
+
+header .Li_Current a
+{
+	color:  #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+header .Li_Current a i
+{
+	color: #e74c3c;
+	font-size: 18px;
+	margin-top: 2px;
+	font-weight: bold;
+	transition: 0.5s;
+}
+header .Li_Current a:hover i
+{
+	transform: rotate(180deg);
+	color: #e74c3c;
+}
+
+/*header .Li_Current a hover*/
+header .Li_Current:hover a
+{
+	color: #e74c3c;
+	transition: 0.4s;
+}
+/*Header Section Close*/
+
+/*Showcase Section Start*/
+#Showcase
+{
+	min-height:550px;
+  	background:url("../Images/showcase.jpg") no-repeat 0 -400px;
+  	text-align:center;
+  	color: #ffffffff;
+  	overflow: hidden;
+  	animation: slide 20s infinite;
+  	animation-delay: 5s;
+}
+@keyframes slide{
+	20%{
+		background: url("../Images/Hub.jpg");
+		animation-delay: 5s;
+	}
+	40%{
+		background: url("../Images/techlearner.jpg") no-repeat 0 -400px;
+		animation-delay: 5s;
+	}
+	60%{
+		background: url("../Images/crm.jpg");
+		animation-delay: 5s;
+	}
+	80%{
+		background: url("../Images/pexels-photo.jpg");
+		animation-delay: 5s;
+	}
+	100%{
+		background: url("../Images/coding.jpg");
+		animation-delay: 5s;
+	}
+}
+#Showcase h1
+{
+	margin-top: 240px;
+	font-size: 40px;
+	margin-bottom: 10px;
+	filter: brightness(1.75);
+}
+#Showcase p
+{
+	font-size: 20px;
+	font-weight: bold;
+	filter: brightness(1.75);
+}
+/*ShowCase Close*/
+
+/*Newslatter Strat*/
+#Newslatter
+{
+	min-height: 100px;
+	background: #465a65;
+	color: #ffffff;
+}
+#Newslatter form
+{
+	float: left;
+	margin-top: 40px;
+}
+#Newslatter label
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffffff;
+}
+#Newslatter input[type="email"]
+{
+	width: 190px;
+	height: 28px;
+	margin-left: 6px;
+	border: none;
+	outline: none;
+	border: 1px solid #2c3e50;
+	font-size: 14px;
+	background: none;
+	padding-left: 4px;
+	background: #ffffff;
+	border-radius: 4px;
+	color: #34495e;
+}
+#Newslatter button
+{
+	height: 24px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #f1f1f1;
+	border: none;
+	outline: none;
+	background: none;
+	border: 2px solid #c0392b;
+	background: #e74c3c;
+	border-radius: 5px;
+	margin-left: 3px;
+}
+#Newslatter button:hover
+{
+	color: #2c3e50;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#Newslatter .Share_Option
+{
+	float: right;
+	margin-top: 17px;
+	margin-right: 5px;
+	width: 270px;
+	height: 65px;
+	background: #ffffff;
+	border-radius: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: 0;
+}
+#Newslatter .Share_Option span
+{
+	position: absolute;
+	height: 100%;
+	width: 110%;
+	background: #3d4f59;
+	text-align: center;
+	color: #fff;
+	line-height: 70px;
+	z-index: 999;
+	transition: .6s linear;
+	border-radius: 35px;
+}
+#Newslatter .Share_Option:hover span
+{
+	transform: translateX(-100%);
+	transition-delay: .3s;
+}
+#Newslatter .Share_Option a
+{
+	flex: 1;
+	text-align: center;
+	font-size: 26px;
+	color: #2980b9;
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: .3s linear;
+}
+#Newslatter .Share_Option:hover a
+{
+	opacity: 1;
+	transform: translateX(0);
+}
+#Newslatter .Share_Option a:nth-of-type(1)
+{
+	transition-delay: 1s;
+}
+#Newslatter .Share_Option a:nth-of-type(2)
+{
+	transition-delay: .8s;
+}
+#Newslatter .Share_Option a:nth-of-type(3)
+{
+	transition-delay: .6s;
+}
+#Newslatter .Share_Option a:nth-of-type(4)
+{
+	transition-delay: .4s;
+}
+/*Newslatter Close*/
+
+
+/*Short Note Section Start*/
+#Title
+{
+	min-height: 300px;
+	background: #ecf0f1;
+	padding-bottom: 60px;
+}
+#Title h1
+{
+	margin-top: 40px;
+	color:  #4cb050;
+	font-size: 25px;
+}
+#Title .Short_Note
+{
+	float: left;
+}
+#Title .Short_Note span
+{
+	color: #563d40;
+	width: 520px;
+	font-size: 15px;
+	margin-left: 8px;
+	margin-top: 25px;
+	line-height: 2;
+	float: left;
+}
+#Title .Short_Note a
+{
+	text-decoration: none;
+	color: #256330;
+}
+#Title .Short_Note .Tech_Photo
+{
+	width: 430px;
+	height: 250px;
+	margin-left: 40px;
+	float: right;
+}
+#Title .Short_Note a:hover
+{
+	color: #f3393c;
+	text-decoration: underline;
+}
+/*Short Note Section Closed*/
+
+
+/*Boxes Section Start*/
+/*Boxes*/
+#Boxes
+{
+	background: #ffffff;
+	padding-bottom: 60px;
+}
+#Boxes .Group1
+{
+	border: none;
+	margin-top: 20px;
+}
+#Boxes .Group1 .H2
+{
+	font-weight: bold;
+	color: #391d43;
+	margin-left: 12px;
+	text-transform: uppercase;
+}
+#Boxes .Box
+{
+	float: left;
+	min-width: 12%;
+	height: 115px;
+	background: #ffffff;
+	border: 1px solid #bdc3c7;
+	border-radius: 8px;
+	box-sizing: border-box;
+	margin: 12px;
+	box-shadow: -2px 12px 22px -16px rgba(0, 0, 0, .75);
+}
+#Boxes .Box:hover
+{
+	box-shadow: -2px 16px 24px -16px rgba(0, 0, 0, .75);
+}
+#Boxes a
+{
+	color: #256330;
+	text-decoration: none;
+	text-align: center;
+}
+#Boxes a .Box p
+{
+	display: block;
+}
+#Boxes a:hover p
+{
+	color: #f3393c;
+	text-decoration: underline;
+}
+#Boxes .Box .similar_image
+{
+	width: 48px;
+	margin-top: 10px;
+}
+#Boxes .Box .Diffphp_img
+{
+	width: 90px;
+	margin-top: 10px;
+}
+#Boxes .Box .Diffjequery_img
+{
+	width: 65px;
+	margin-top: 10px;
+}
+#Boxes .Box .Diffsass_img
+{
+	width: 58px;
+	margin-top: 10px;
+}
+#Boxes .Box .Diffless_img
+{
+	width: 82px;
+	margin-top: 10px;
+}
+#Boxes .Box .Diffgit_img
+{
+	width: 82px;
+	margin-top: 10px;
+}
+#Boxes .Box .image
+{
+	width: 40px;
+	margin-top: 8px;
+}
+/*Boxex Section Close*/
+
+/*Training College Campus section start*/
+#Training_Clg_Camp
+{
+	min-height: 100px;
+	background: #465a65;
+}
+#Training_Clg_Camp .Tclcmp
+{
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 8px;
+}
+#Training_Clg_Camp .Tclcmp .H1, .H4
+{
+	color: #ff9c89;
+}
+#Training_Clg_Camp .Tclcmp p,h3
+{
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+}
+#Training_Clg_Camp .Tclcmp a
+{
+	color: #3498db;
+	text-decoration: none;
+}
+#Training_Clg_Camp .Tclcmp a:hover
+{
+	color: #f3393c;
+	text-decoration: underline;
+}
+/*Training College Campus Section Closed*/
+
+/*Following Section Start*/
+#Following
+{
+	min-height: 50px;
+	background: #ffff;
+	padding-top: 25px;
+	text-align: center;
+}
+#Following sub
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: #563d40;
+}
+#Following a
+{
+	text-decoration: none;
+}
+#Following i
+{
+	font-size: 20px;
+	height: 30px;
+	width: 30px;
+	padding: 3px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #34495e;
+	margin-left: 5px;
+	border-radius: 50%;
+	color: #3498db;
+	overflow: hidden;
+}
+#Following i:hover
+{
+	background: #3498db;
+	color: #ffff;
+}
+/*Following Section Closed*/
+
+/*Author Section Strat*/
+#Author
+{
+	min-height: 200px;
+	background: #465a65;
+	color: #ffffff;
+}
+#Author .Author_View img
+{
+	float: left;
+	width: 150px;
+	margin-top: 26px;
+	opacity: .8;
+	border: 2px solid #354241;
+	border-radius: 8px;
+	margin-left: 2px;
+}
+#Author .Author_View .H3, span
+{
+	display: inline-block;
+	margin-left: 12px;
+}
+#Author .Author_View .H3
+{
+	font-size: 25px;
+	margin-top: 30px;
+}
+#Author .Author_View span
+{
+	font-size: 14px;
+}
+#Author .Author_View .Auth
+{
+	float: right;
+	display: inline-block;
+	color: #bdc3c7;
+}
+/*Author View Closed*/
+
+/*About Page Start Here*/
+#About
+{
+	min-height: 500px;
+}
+#About #Main_Col
+{
+	float: left;
+	width: 60%;
+	margin-top: 120px;
+}
+#About #Main_Col .Page_Title
+{
+	color: #531625;
+}
+#About #Main_Col .P
+{
+	color:  #2b2a28;
+}
+#About #Main_Col #Sidebar, .Dark
+{
+	color: #ffffff;
+	background: #35424a;
+	padding: 8px;
+	margin-top: 20px;
+	border-radius: 3px;
+}
+#About #Sidebar
+{
+	float: right;
+	width: 32%;
+	margin-top: 120px;
+}
+#About #Sidebar h3
+{
+	padding-top: 20px;
+}
+#TEAM
+{
+	min-height: 550px;
+	background: #465a65;
+}
+#TEAM .HEAD
+{
+	width: 400px;
+	height: 100px;
+	margin-left: 330px;
+	text-align: center;
+}
+#TEAM .HEAD h1
+{
+	font-size: 30px;
+	text-transform: capitalize;
+	color: #fff;
+}
+#TEAM .HEAD p
+{
+	text-transform: capitalize;
+	color: #e74c3c;
+	margin-top: -18px;
+}
+#TEAM .MEET
+{
+	width: 1200px;
+	height: 400px;
+	margin-top: 10px;
+}
+#TEAM .MEET .GREET
+{
+	float: left;
+	width: 300px;
+	height: 350px;
+	background: #ffffff;
+	margin-left: 43px;
+	margin-top: 25px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	box-shadow: box-shadow: -2px 16px 24px -16px rgba(225, 225, 225, .75);
+}
+#TEAM .MEET .GREET .PROF
+{
+	width: 150px;
+	height: 150px;
+	margin-left: 70px;
+	margin-top: 30px;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+#TEAM .MEET .GREET .PROF img
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+#TEAM .MEET .GREET .BIO
+{
+	width: 280px;
+	height: 140px;
+	margin-left: 10px;
+	margin-top: 2px;
+	box-sizing: border-box;
+	text-align: center;
+}
+#TEAM .MEET .GREET .BIO h3
+{
+	color: #e74c3c;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: -3px;
+}
+#TEAM .MEET .GREET .BIO dfn
+{
+	color: #531625;
+	text-transform: capitalize;
+}
+#TEAM .MEET .GREET .BIO .UL
+{
+	list-style: none;
+	margin-top: 28px;
+}
+#TEAM .MEET .GREET .BIO .UL .LI
+{
+	display: inline-block;
+	padding: 10px;
+}
+#TEAM .MEET .GREET .BIO .UL .LI a
+{
+	text-decoration: none;
+	color: dodgerblue;
+}
+#TEAM .MEET .GREET .BIO .UL .LI a i
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	padding: 13px;
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	border: 1px solid dodgerblue;
+	box-sizing: border-box;
+}
+/*About Page Closed*/
+
+/*Contact Section*/
+#Contact
+{
+	margin-top: 20px;
+	min-height: 100px;
+	background: #bdb4b5;
+}
+#Contact h2
+{
+	color: #e74c3c;
+}
+#Contact p
+{
+	color:  #563d40;
+	font-weight: bold;
+}
+/*Contact Sction Closed*/
+
+/*Services Section Start*/
+#Services
+{
+	padding-bottom: 30px;
+}
+#Services #Main_Col
+{
+	float: left;
+	width: 50%;
+	margin-left: 20px;
+	margin-top: 120px;
+}
+#Services #Main_Col .Page_Title
+{
+	color: #531625;
+	font-size: 24px;
+}
+#Services .Services
+{
+	background: #ffffff;
+}
+#Services .Services a
+{
+	text-decoration: none;
+}
+#Services .Services .LI
+{
+	background: #e6e6e6;;
+	border: 1px solid #cccccc;
+	padding: 10px;
+	list-style: none;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+#Services .Services .LI:hover
+{
+	transform: scale(.9);
+	cursor: pointer;
+}
+#Services .Services .LI h3
+{
+	color: #c0392b;
+}
+#Services .Services .LI .P1
+{
+	color: #531625;
+}
+#Services .Services .LI .P2
+{
+	color: #c0392b;
+}
+#Services #Sidebar
+{
+	float: right;
+	width: 30%;
+	margin-top: 140px;
+}
+#Services #Sidebar h3
+{
+	margin-left: 10px;
+	color: #e74c3c;
+}
+#Services #Sidebar label
+{
+	color: #e74c3c;
+	font-weight: bold;
+}
+#Services #Sidebar .Quote
+{
+	margin-left: 10px;
+}
+#Services #Sidebar .Quote input, textarea
+{
+	width: 80%;
+	padding: 8px;
+	margin-top: 2px;
+	margin-bottom: 6px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+}
+#Services #Sidebar .Quote input
+{
+	height: 25px;
+}
+#Services #Sidebar .Quote .Btn
+{
+	margin-bottom: 10px;
+	width: 26%;
+	padding: 12px;
+	border: none;
+	outline: none;
+	border: 1px solid #e74c3c;
+	font-weight: bold;
+	color: #ffffff;
+	border-radius: 3px;
+	background: #e74c3c;
+}
+#Services #Sidebar .Quote .Btn:hover
+{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+/*Sevices Section Closed*/
+
+
+/*Traning Section Start*/
+/*Showcase2 for training Section Start*/
+#Slide_Showcase
+{
+	min-height:700px;
+  	background:url("../Images/showcase.jpg") no-repeat 0 -400px;
+  	text-align:center;
+  	color: #ffffffff;
+  	overflow: hidden;
+  	animation: slider 20s infinite;
+  	animation-delay: 5s;
+}
+@keyframes slider{
+	20%{
+		background: url("../Images/Hub.jpg");
+		animation-delay: 5s;
+	}
+	40%{
+		background: url("../Images/slide1.jpg");
+		animation-delay: 5s;
+	}
+	60%{
+		background: url("../Images/crm.jpg");
+		animation-delay: 5s;
+	}
+	80%{
+		background: url("../Images/slide4.jpg");
+		animation-delay: 5s;
+	}
+	90%{
+		background: url("../Images/techlearner.jpg") no-repeat 0 -400px;
+		animation-delay: 5s;
+	}
+	100%{
+		background: url("../Images/slide3.jpg");
+		animation-delay: 5s;
+	}
+}
+#Slide_Showcase h1
+{
+	margin-top: 330px;
+	font-size: 40px;
+	margin-bottom: 10px;
+	filter: brightness(1.75);
+}
+#Slide_Showcase p
+{
+	font-size: 20px;
+	font-weight: bold;
+	filter: brightness(1.75);
+}
+/*ShowCase2 Close*/
+#Courses
+{
+	min-height: 80px;
+	background: #e74c3c;
+	margin-top: 25px;
+	border-radius: 10px;
+	width: 98%;
+	margin-left: 14px;
+}
+#Courses h3
+{
+	text-align: center;
+	margin-top: 30px;
+	color: #ffff;
+	line-height: 30px;
+	font-size: 25px;
+	transition: .8s;
+}
+#Courses h3:hover
+{
+	transform: scale(1.3);
+	transition: .8s;
+}
+#Training
+{
+	background: #fffe;
+	margin-top: 15px;
+	padding-bottom: 50px;
+}
+#Training .TCourses
+{
+	min-width: 60%;
+	margin-top: 20px;
+	min-height: 1650px;
+}
+#Training .TCourses .TRbox
+{
+	box-sizing: border-box;
+	width: 240px;
+	height: 350px;
+	background: #f8f8f8;
+	text-align: center;
+	float: left;
+	margin-left: 28px;
+	margin-top: 50px;
+	border: 1px solid #bdb4b5;
+	border-radius: 3px;
+	box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, .75);
+}
+#Training .TCourses .TRbox img
+{
+	width: 100%;
+}
+#Training .TCourses .TRbox h3
+{
+	color: #e67e22;
+	margin-top: 30px;
+}
+#Training .TCourses .TRbox p
+{
+	color: #0b0e21;
+}
+#Training .TCourses .TRbox .Hide
+{
+	width: 235px;
+	height: 20px;
+	margin-left: 1px;
+	margin-top: -25px;
+	background: #f8f8f8;
+	position: relative;
+	z-index: 0;
+}
+#Training .TCourses .TRbox button
+{
+	padding: 13px;
+	border: none;
+	background: none;
+	color: #fff;
+	outline: none;
+	border: 1px solid #8fb488;
+	border-radius: 4px;
+	background: #8fb488;
+	font-weight: bold;
+	margin-top: 10px;
+}
+#Training .TCourses .TRbox button:hover
+{
+	color: #5f0713;
+	cursor: pointer;
+	transform: scale(1.1);
+	background: #8fb490;
+}
+#Enq_Form
+{
+	background: #bdb4b5;
+	min-height: 600px;
+}
+#Enq_Form h1
+{
+	text-align: center;
+	color: #5a4b46;
+	font-size: 25px;
+	line-height: 3.5;
+	position: relative;
+}
+#Enq_Form .Form_Area
+{
+	min-width: 80%;
+	margin-top: -25px;
+}
+#Enq_Form .Form_Area .Fsection1, .Fsection2
+{
+	float: left;
+	margin-left: 29px;
+	margin-bottom: 12px;
+}
+#Enq_Form .Form_Area .F_Lbl label
+{
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 2px;
+	font-size: 16px;
+	color: #5a4b46;
+}
+#Enq_Form .Form_Area .F_Lbl input
+{
+	height: 38px;
+	width: 490px;
+	outline: none;
+	border: none;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	padding-left: 8px;
+	color: #5a4b46;
+	font-size: 13px;
+}
+#Enq_Form .Form_Area .F_Lbl .Textarea
+{
+	height: 111px;
+	width: 480px;
+	color: #5a4b46;
+	font-size: 13px;
+}
+#Enq_Form .Form_Area .Captcha
+{
+	text-align: center;
+}
+#Enq_Form .Form_Area .Captcha h4
+{
+	font-size: 16px;
+	color: #5a4b46;
+	text-transform: capitalize;
+}
+#Enq_Form .Form_Area .Captcha a
+{
+	color: red;
+	padding: 6px;
+	height: 30px;
+	width: 30px;
+	border: 1px solid #f0e78c;
+	background: #f0e78c;
+	border-radius: 2px;
+}
+#Enq_Form .Form_Area .Captcha input
+{
+	width: 25px;
+	padding: 10px;
+	outline: none;
+	margin-bottom: 5px;
+	border: none;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+#Enq_Form .Form_Area .Captcha .btn
+{
+	width: 100px;
+	border: none;
+	color: #fff;
+	outline: none;
+	border: 1px solid #8fb488;
+	background: none;
+	background: #8fb488;
+	border-radius: 3px;
+	transition: .5s;
+}
+#Enq_Form .Form_Area .Captcha .btn:hover
+{
+	background: #8fb477;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+#TProgram
+{
+	min-height: 320px;
+	background: #465a65;
+	margin-top: 8px;
+}
+#TProgram .Left
+{
+	float: left;
+	width: 300px;
+	height: 225px;
+	margin-top: 30px;
+	position: absolute;
+}
+#TProgram .Left h1
+{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #e74c3c;
+}
+#TProgram .Left a
+{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	font-size: 15px;
+	line-height: 2.5;
+}
+#TProgram .Left i
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #e74c3c;
+	transition: 0.5s;
+	padding: 10px;
+}
+#TProgram .Left a:hover i
+{
+	color: #e67e22;
+	transform: rotate(-180deg);
+}
+#TProgram .Left a:hover
+{
+	color: #e67e22;
+}
+
+#TProgram .Right
+{
+	float: right;
+	width: 300px;
+	height: 225px;
+	margin-top: 30px;
+	margin-left: 20px;
+	position: relative;
+}
+#TProgram .Right h1
+{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #e74c3c;
+}
+#TProgram .Right p
+{
+	color: #fff;
+	font-size: 15px;
+	line-height: 1.5;
+}
+#TProgram .Right i
+{
+	font-size: 18px;
+	color: #e74c3c;
+	padding: 4px;
+	margin-left: 8px;
+}
+#TProgram .Vrt
+{
+	float: left;
+	border-left: 1px solid #e67e22;
+	height: 302px;
+	margin-top: 8px;
+	margin-left: 540px;
+}
+/*Training Section Closed*/
+
+
+/*Footer Section Start*/
+footer
+{
+	padding: 15px;
+	color: #ffffff;
+	background-color: #3d4f59;
+	text-align: center;
+}
+footer p
+{
+	font-weight: normal;
+	color: #ffffff;
+}
+footer #Span
+{
+	color: #e74c3c;
+}
+/*Footer Closed*/
